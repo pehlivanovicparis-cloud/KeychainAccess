@@ -851,7 +851,7 @@ public final class Keychain {
                 } else {
                     query[UseAuthenticationUI] = UseAuthenticationUIFail
                 }
-            } else if #available(macOS 10.10, *) {
+            } else {
                 query[UseNoAuthenticationUI] = kCFBooleanTrue
             }
             #endif
