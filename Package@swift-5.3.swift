@@ -16,7 +16,9 @@ let package = Package(
 		.iOS(.v13), .macOS(.v13), .watchOS(.v9), .tvOS(.v16)
     ],
     products: [
-        .library(name: "KeychainAccess", targets: ["KeychainAccess"])
+        .library(name: "KeychainAccess", targets: ["KeychainAccess"]),
+        .library(name: "KeychainAccessDynamic", type: .dynamic, targets: ["KeychainAccess"]),
+        .library(name: "KeychainAccessStatic", type: .static, targets: ["KeychainAccess"])
     ],
     targets: [
         .target(
