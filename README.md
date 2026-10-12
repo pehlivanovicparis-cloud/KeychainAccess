@@ -8,6 +8,19 @@
 
 KeychainAccess is a simple Swift wrapper for Keychain that works on iOS and macOS. Makes using Keychain APIs extremely easy and much more palatable to use in Swift.
 
+### About this fork
+
+This fork (maintained by [Paris Pehlivanovic](https://github.com/pehlivanovicparis-cloud)) applies six fixes that were contributed to the upstream repository but never merged there — upstream's last release was v4.2.2 in March 2021. Each fix is credited to its original author in the commit history:
+
+- [#538](https://github.com/kishikawakatsumi/KeychainAccess/pull/538) — Fix macOS Access Groups
+- [#534](https://github.com/kishikawakatsumi/KeychainAccess/pull/534) — Removed explicit platforms definition from Package.swift
+- [#493](https://github.com/kishikawakatsumi/KeychainAccess/pull/493) — Added `containsAny` method
+- [#594](https://github.com/kishikawakatsumi/KeychainAccess/pull/594) — Remove unsafe build flags
+- [#519](https://github.com/kishikawakatsumi/KeychainAccess/pull/519) — Adds explicit dynamic and static product in SPM manifest and adds property wrapper
+- [#544](https://github.com/kishikawakatsumi/KeychainAccess/pull/544) — Remove an unnecessary check for Mac OS X 10.10 (one-line merge conflict resolved by hand: upstream had renamed `OSX` to `macOS` in that check)
+
+**Verification status:** these changes were merged on a Linux machine without Xcode and have not been build-tested yet. Build in Xcode before relying on this fork.
+
 <img src="https://github.com/kishikawakatsumi/KeychainAccess/assets/40610/4de4aae1-6fc1-4477-af6d-afbe6d164da0" width="320px" /> <img src="https://github.com/kishikawakatsumi/KeychainAccess/assets/40610/2980ea84-862b-4067-b9b7-90de629171b9" width="320px" />
 <img src="https://github.com/kishikawakatsumi/KeychainAccess/assets/40610/3299347d-eb1b-446c-921c-778fa493f818" width="320px" />
 
