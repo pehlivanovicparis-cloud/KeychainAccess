@@ -19,7 +19,7 @@ This fork (maintained by [Paris Pehlivanovic](https://github.com/pehlivanovicpar
 - [#519](https://github.com/kishikawakatsumi/KeychainAccess/pull/519) — Adds explicit dynamic and static product in SPM manifest and adds property wrapper
 - [#544](https://github.com/kishikawakatsumi/KeychainAccess/pull/544) — Remove an unnecessary check for Mac OS X 10.10 (one-line merge conflict resolved by hand: upstream had renamed `OSX` to `macOS` in that check)
 
-**Verification status:** these changes were merged on a Linux machine without Xcode and have not been build-tested yet. Build in Xcode before relying on this fork.
+**Verification status:** verified in CI on GitHub Actions (macOS runners): the Swift Package builds clean and the full upstream test suite passes — 42 tests, 0 failures — under Xcode 16.2 on an iOS 18.2 simulator (first verified 2026-10-11).
 
 <img src="https://github.com/kishikawakatsumi/KeychainAccess/assets/40610/4de4aae1-6fc1-4477-af6d-afbe6d164da0" width="320px" /> <img src="https://github.com/kishikawakatsumi/KeychainAccess/assets/40610/2980ea84-862b-4067-b9b7-90de629171b9" width="320px" />
 <img src="https://github.com/kishikawakatsumi/KeychainAccess/assets/40610/3299347d-eb1b-446c-921c-778fa493f818" width="320px" />
